@@ -10,13 +10,13 @@
     <script>
     var setting = {
         // 在以下双引号中粘贴QQ钱包收款链接
-        qqUrl: "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=024E2B98C77E165A13B4BDE8A93D467D41943CF0C800C32AF8A2FAEA8EE637C7&u=691767737",
+        qqUrl: "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=798829432&ac=B9ADDB2B87E69E7BB7DB90E5756E9AB22662868155F32E86DF7FE462E72541CB&n=kimi%E6%88%91%E7%94%B7%E7%A5%9E&f=wallet",
         
         // 在以下双引号中粘贴微信收款链接
-        wechatUrl: "wxp://f2f0rUvTEytQaLTqGyfp_0epfJfZVWNBay-6",
+        wechatUrl: "wxp://f2f0X2OWAvWPPEnmZDuBRVvOjRCdLeVDaF4n",
         
         // 在以下双引号中粘贴支付宝收款链接
-        aliUrl: "https://qr.alipay.com/fkx08219elzbqrua1erwg54",
+        aliUrl: "https://qr.alipay.com/fkx02530ulgmod02vasgn1d",
         
         // 用于动态生成二维码的API，不需要修改。
         qrcodeApi: "http://qr.liantu.com/api.php?text="    
@@ -154,9 +154,6 @@
                 text: function() {
                     return "528917444";//这里替换成你的口令代码
                 }
-            });
-            clipboard.on('success', function(e) {
-                alert('复制成功,打开最新版支付宝就能领取红包')
             });
             clipboard.on('error', function(e) {
                 alert('您的浏览器不支持点击复制')
